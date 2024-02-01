@@ -11,9 +11,13 @@
     "build:js": "babel packages --out-dir dist --extensions \".ts,.js\" --ignore \"**/*.d.ts\""
   },
   "keywords": [],
-  "author": "",
+  "author": "xiaokang1009",
   "license": "ISC",
   "bin": "./dist/bin/create-gulp.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaokang1009/create-gulp.git"
+  },
   "devDependencies": {
     "@babel/cli": "^7.23.9",
     "@babel/core": "^7.23.9",

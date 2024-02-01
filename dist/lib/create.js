@@ -20,7 +20,7 @@ var generator = /*#__PURE__*/function () {
         case 0:
           _context.prev = 0;
           // 1.获取模板文件夹的路径
-          templateDir = _path["default"].resolve(__dirname, "../template/common-temp"); // 创建项目文件夹
+          templateDir = _path["default"].resolve(__dirname, '../template'); // 创建项目文件夹
           _context.next = 4;
           return _fsExtra["default"].mkdir(_path["default"].resolve(process.cwd(), projectName));
         case 4:
@@ -28,22 +28,22 @@ var generator = /*#__PURE__*/function () {
           return _fsExtra["default"].copy(templateDir, _path["default"].resolve(process.cwd(), projectName));
         case 6:
           _context.next = 8;
-          return _fsExtra["default"].mkdir(_path["default"].resolve(process.cwd(), projectName, "src"));
+          return _fsExtra["default"].mkdir(_path["default"].resolve(process.cwd(), projectName, 'src'));
         case 8:
           _context.next = 10;
-          return _fsExtra["default"].mkdir(_path["default"].resolve(process.cwd(), projectName, "src/js"));
+          return _fsExtra["default"].mkdir(_path["default"].resolve(process.cwd(), projectName, 'src/js'));
         case 10:
           _context.next = 12;
-          return _fsExtra["default"].mkdir(_path["default"].resolve(process.cwd(), projectName, "src/scss"));
+          return _fsExtra["default"].mkdir(_path["default"].resolve(process.cwd(), projectName, 'src/scss'));
         case 12:
           _context.next = 14;
-          return _fsExtra["default"].mkdir(_path["default"].resolve(process.cwd(), projectName, "src/views"));
+          return _fsExtra["default"].mkdir(_path["default"].resolve(process.cwd(), projectName, 'src/views'));
         case 14:
           _context.next = 16;
-          return _fsExtra["default"].mkdir(_path["default"].resolve(process.cwd(), projectName, "src/libs"));
+          return _fsExtra["default"].mkdir(_path["default"].resolve(process.cwd(), projectName, 'src/libs'));
         case 16:
           _context.next = 18;
-          return _fsExtra["default"].mkdir(_path["default"].resolve(process.cwd(), projectName, "src/images"));
+          return _fsExtra["default"].mkdir(_path["default"].resolve(process.cwd(), projectName, 'src/images'));
         case 18:
           _context.next = 23;
           break;
@@ -79,10 +79,10 @@ var create = exports.create = /*#__PURE__*/function () {
           }
           _context2.next = 7;
           return _inquirer["default"].prompt([{
-            type: "confirm",
-            name: "isCover",
-            message: "是否覆盖同名文件夹？ y/n",
-            "default": "y"
+            type: 'confirm',
+            name: 'isCover',
+            message: '是否覆盖同名文件夹？ y/n',
+            "default": 'y'
           }]);
         case 7:
           _yield$inquirer$promp = _context2.sent;
