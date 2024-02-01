@@ -22,11 +22,13 @@
     "@babel/cli": "^7.23.9",
     "@babel/core": "^7.23.9",
     "@babel/plugin-transform-modules-commonjs": "^7.23.3",
-    "@babel/preset-env": "^7.23.9",
     "@babel/preset-typescript": "^7.23.3",
     "@types/fs-extra": "^11.0.4",
     "@types/inquirer": "^9.0.7",
-    "@types/node": "^20.11.14",
+    "@types/node": "^20.11.14"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.23.9",
     "commander": "^11.1.0",
     "fs-extra": "^11.2.0",
     "inquirer": "^8.2.5",
